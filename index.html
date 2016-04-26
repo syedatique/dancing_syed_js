@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dancing Homer</title>
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  <style>
+  	button {position:absolute; top:10px; left:10px;}
+
+	.container { width: 80%; height: 50%; margin: 10px 10px auto;}
+
+	#btn {border: 1px solid red;border-radius: 10px;}
+
+	body {background-color: #99288A;}
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- <script src="app.js"></script> -->
+</head>
+<body>
+<div class="container">
+	<button id="btn">
+		<img src="http://vignette2.wikia.nocookie.net/simpsons/images/0/02/Homer_Simpson_2006.png/revision/latest?cb=20091207194310" alt="Smiley face" height="150" width="100">
+	</button>
+</div>
+
+<script>
+	$(function(){
+    $("button").on({
+        mouseover:function(){
+            $(this).css({
+                left:(Math.random()*800)+"px",
+                top:(Math.random()*900)+"px",
+            	});
+        	}
+    	});
+	});
+</script>
+
+</body>
+</html>

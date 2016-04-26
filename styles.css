@@ -1,0 +1,21 @@
+button{
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+
+.container {
+  width: 80%;
+  height: 50%;
+  margin: 10px 10px auto;
+}
+
+#btn {
+  /*color: red;*/
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #99288A;
+}
